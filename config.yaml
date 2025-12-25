@@ -1,0 +1,18 @@
+model:
+  vocab_size: 1000
+  image_embed_dim: 512
+  text_hidden_dim: 512
+  fusion_dim: 512
+  seq_hidden_dim: 512
+  mem_slots: 16
+  mem_dim: 512
+training:
+  batch_size: 2
+  lr: 0.0001
+  epochs: 1
+  weight_decay: 0.0
+data:
+  image_root: data/images
+  manifest_train: data/manifest_train.json
+  manifest_val: data/manifest_val.json
+  num_workers: 4
